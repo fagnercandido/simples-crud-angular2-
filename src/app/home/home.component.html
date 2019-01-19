@@ -1,0 +1,50 @@
+<section class="content-header">
+</section>
+
+<section class="content">
+  <section class="invoice">
+
+    <form [formGroup]="homeForm" novalidate>
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 class="page-header">
+            <i class="fa fa-shopping-cart"></i> Let's go Simple Crud
+          </h2>
+        </div>
+      </div>
+      <div class="row invoice-info">
+        <div class="col-xs-4">
+          <p class="lead">Nome:</p>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+          <mt-input label="nome">
+            <input class="form-control" formControlName="nome" >
+          </mt-input>
+        </div>
+
+        <div class="col-xs-4">
+          <p class="lead">Sobrenome:</p>
+        </div>
+        <div class="col-sm-8 col-xs-12">
+          <mt-input label="sobrenome">
+            <input class="form-control" formControlName="sobrenome" >
+          </mt-input>
+        </div>
+        <div class="col-xs-4">
+          <p class="lead">Idade:</p>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+          <mt-input label="idade">
+            <input class="form-control" formControlName="idade" >
+          </mt-input>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <a (click)="adicionar(homeForm.value)" class="btn btn-success pull-right"><i class="fa fa-credit-card"></i> Adiciona!
+            </a>
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+</section>
